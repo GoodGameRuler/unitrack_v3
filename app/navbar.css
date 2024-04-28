@@ -1,0 +1,69 @@
+.navBarContainer {
+    grid-column: 1;
+    background-color: red;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+}
+
+.navBarTitle {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.navBarItemsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.navBarButton {
+    width: 100%;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: inherit;
+    color: white;
+    font-weight: 600;
+
+    border: none;
+    box-sizing: border-box;
+}
+
+.navBarButton:hover {
+    background-color: rgba(222, 76, 53, 0.97);
+
+}
+
+.navBarItem {
+    border-radius: 5px;
+
+}
+
+.userLoginDetails {
+    width: 100%;
+}
+
+.loginInfoContainer {
+    padding: 0 20px;
+    max-height: 80px;
+    min-height: 80px;
+    background-color: #df2c11;
+    border-radius: 25px;
+
+
+    overflow-y: hidden;
+    box-sizing: border-box;
+    transition: 2s ease;
+}
+
+.loginInfoContainer:hover {
+    max-height: 100vh;
+    height: auto;
+}

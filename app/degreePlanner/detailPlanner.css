@@ -1,0 +1,166 @@
+.degreePlanContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: space-between;
+
+}
+
+.degreePlan {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto;
+    gap: 25px;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    background-color: #F0EEEE;
+    border-radius: 15px;
+    min-width: 800px;
+    box-sizing: border-box;
+}
+
+.degreePlan > .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.degreePlan > .heading p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.degreePlan > .heading i {
+    color: black;
+    font-size: 35px;
+}
+
+.heading i:hover {
+    color: #DD432B;
+}
+
+.degreeRequirements {
+    float: right;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    padding: 15px 15px;
+    height: 100%;
+}
+
+.degreeRequirements > .creditRequirements {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.degreeRequirements > .creditRequirements p {
+    padding: 20px;
+}
+
+.creditRequirements > .degreeRequirement {
+    width: 255px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.degreeProgress {
+    width: 255px;
+    display: table;
+}
+
+.degreeProgress p {
+    display: table-cell;
+    width: 100%;
+}
+
+progress[value] {
+    --color: #DD432B; /* the progress color */
+    --background: #E5E5E5; /* the background color */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 255px;
+    height: 9px;
+    margin-bottom: 5px;
+    border-radius: 5em;
+    background: var(--background);
+}
+
+progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+}
+
+progress[value]::-webkit-progress-value {
+border-radius: 10em;
+background: var(--color);
+}
+
+progress[value]::-moz-progress-bar {
+border-radius: 10em;
+background: var(--color);
+}
+
+.degreeUnit {
+    display: flex;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    width: 150px;
+    min-width: 130px;
+    height: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.degreeUnit i {
+    color: black;
+    opacity: 50%;
+
+}
+
+i:hover {
+    color: #DD432B;
+    opacity: 100%;
+}
+
+.semesterRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.semesterPlan > .semesterRow i {
+    color: black;
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+.semesterRow:hover {
+    color: #DD432B;
+}
+
+.semesterPlan p {
+    display: inline;
+}
+
+.semesterPlan #year {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.semesterPlan #semester {
+    font-size: 20px;
+    font-weight: 600;
+}

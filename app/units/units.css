@@ -1,0 +1,91 @@
+.unitSearchPage {
+    min-width: 70%;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+.unit_search {
+    height: 60px;
+    margin: 10px 0;
+    position: relative;
+
+}
+
+.unit_search .unit_search_input {
+    padding: 5px;
+    padding-left: 50px;
+    border-radius: 15px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+input:focus, input:first-line {
+    background-color: white;
+}
+
+.input_label p {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(5%, -50%);
+    color: rgba(0, 0, 0, 0.35);
+    z-index: 0;
+}
+
+.unit_search_input:valid { background-color:white; }
+.unit_search_input:invalid{ background-color:transparent; }
+
+.unit_search .unit_search_input:focus {
+    border: 2px solid red;
+}
+
+.filterAccordian {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.filterHeader {
+    color: grey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+fieldset.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+span.icon {
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    top: 50%;
+    transform: translate(20%, -50%);
+    z-index: 2;
+}

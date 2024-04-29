@@ -46,13 +46,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
-*You're all set! Keep in mind that you should activate the python env before
-every development session, and deactivate any other environments that might be
-active, eg. default `conda deactivate base`. If you're on a UNIX system, the
-included `start.sh` script can be run to start the server; however need to run
-`chmod +x start.sh` once to give execute permissions.*
-
 ## Contributing
 
 Read the guidelines below to write good commit messages, branch names, and make pull requests that follow the conventions we will be using throughout the project.

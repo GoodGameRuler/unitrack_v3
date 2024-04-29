@@ -6,10 +6,10 @@ function Units() {
             <h2 className="pageHeader"> Find a unit outline </h2>
             <p> Unit outlines help you plan your unit choices, organise your studies and assessments, and provide evidence of the topics you have studied. Unit outlines will be available 2 weeks before the first day of teaching. </p>
 
-            <form action="" className="search_filter">
-                <div className="unit_search">
+            <form action="" className="searchFilter">
+                <div className="unitSearch">
                     <span className="material-icons icon"> search </span>
-                    <label className="input_label"><p>Search Unit Code </p> <input className="unit_search_input" required type='text' placeholder="" name="search" id="unit_search" /></label>
+                    <label className="inputLabel"><p>Search Unit Code </p> <input className="unitSearchInput" required type='text' placeholder="" name="search" id="unitSearch" /></label>
                 </div>
             </form>
 

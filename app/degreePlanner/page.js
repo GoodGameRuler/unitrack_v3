@@ -14,7 +14,7 @@ function DegreePlanner() {
                 <div className="detailsForm">
                     <div className="formElement">
                         <label className="degreeLabel" for="degree">Degree</label>
-                        <select id="degree" className="degree_select" required>
+                        <select id="degree" className="degreeSelect" required>
                             <option value="" disabled selected>Select degree</option>
                             <option value="1">Bachelor of Science</option>
                             <option value="2">Bachelor of Advanced Computing</option>
@@ -23,7 +23,7 @@ function DegreePlanner() {
                     </div>
                     <div className="formElement">
                         <label className="degreeLabel" for="firstMajor">Major</label>
-                        <select id="firstMajor" className="degree_select" required>
+                        <select id="firstMajor" className="degreeSelect" required>
                             <option value="" disabled selected>Select major</option>
                             <option value="1">Computer Science</option>
                             <option value="2">Data Science</option>
@@ -32,7 +32,7 @@ function DegreePlanner() {
                     </div>
                     <div className="formElement">
                         <label className="degreeLabel" for="secondMajor">Second major (if applicable)</label>
-                        <select id="secondMajor" className="degree_select" required>
+                        <select id="secondMajor" className="degreeSelect" required>
                             <option value="" disabled selected>Select major</option>
                             <option value="1">Computer Science</option>
                             <option value="2">Data Science</option>
@@ -42,7 +42,7 @@ function DegreePlanner() {
                     </div>
                     <div className="formElement">
                         <label className="degreeLabel" for="minor">Minor (if applicable)</label>
-                        <select id="minor" className="degree_select" required>
+                        <select id="minor" className="degreeSelect" required>
                             <option value="" disabled selected>Select minor</option>
                             <option value="1">Mathematics</option>
                             <option value="2">Computer Science</option>
@@ -51,7 +51,7 @@ function DegreePlanner() {
                         </select>
                     </div>
                     <div className="formElement">
-                        <button className="submit_button" type="submit">FINISH</button>
+                        <button className="submitButton" type="submit">FINISH</button>
                     </div>
                 </div>
             </form>

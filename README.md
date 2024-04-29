@@ -24,7 +24,7 @@ Bhargava](https://github.com/gitparth12). The purpose of UniTrack is to present
 a university services platform with a better user experience, mainly targeting
 degree planning, unit selection, and time table selection.
 
-The initial tech stack was NextJS with Firebase, however for a revamp of the project, we decided on Django and SQLite with HTML and CSS.
+After two iterations of technical stacks for this project we have settled on React, Next.Js, and Vercel
 
 We welcome any collaboration and contributions from the public to this project, please refer to the [open source contribution](#open-source) section.
 

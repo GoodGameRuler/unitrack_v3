@@ -1,7 +1,7 @@
 "use client"
 import "./degreePlanner.css";
 import { useState } from "react";
-import { Planner } from "./panner";
+import { Planner } from "./planner";
 
 function DegreePlanner() {
     const [shouldShowNextPage, setShouldShowNextPage] = useState(false);

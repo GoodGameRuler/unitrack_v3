@@ -12,7 +12,6 @@ export function Planner() {
                         <i className="material-icons">edit</i>
                     </a>
                 </div>
-                <Unit />
                 <SemesterPlan />
                 <SemesterPlan />
                 <SemesterPlan />

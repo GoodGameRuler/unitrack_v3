@@ -1,5 +1,6 @@
 import "./detailPlanner.css"
-import Stack from '@mui/material/Stack';
+import {Stack, Button} from '@mui/material';
+
 
 export function Planner() {
 
@@ -107,6 +108,18 @@ export function Unit() {
                 </Stack>
             </div>
         </a>
+    )
+}
+
+export function DeleteConfimation() {
+    return (
+        <div className="deleteConfirmation">
+            <p>Are you sure you want to remove <em>UNIT CODE</em>?</p>
+            <Stack direction="row" spacing={2}>
+                <Button variant="outlined" sx={{color: "#DD432B", borderColor: "#DD432B"}}>CANCEL</Button>
+                <Button variant="contained" sx={{color: "white", backgroundColor: "#DD432B"}}>DELETE</Button>
+            </Stack> 
+        </div>
     )
 }
 

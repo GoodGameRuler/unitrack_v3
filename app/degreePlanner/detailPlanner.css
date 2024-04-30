@@ -182,3 +182,32 @@ i:hover {
     font-size: 12px;
     opacity: 0.7;
 }
+
+.deleteConfirmation {
+    height: 263px;
+    width: 556px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.deleteConfirmation Button {
+    width: 180px;
+    height: 52px;
+}
+
+.deleteConfirmation p {
+    font-size: 25px;
+    font-weight: 700;
+    width: 392px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.deleteConfirmation em {
+    color: #DD432B;
+    font-style: normal;
+}

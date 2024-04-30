@@ -1,4 +1,5 @@
 import "./detailPlanner.css"
+import Stack from '@mui/material/Stack';
 
 export function Planner() {
 
@@ -11,6 +12,7 @@ export function Planner() {
                         <i className="material-icons">edit</i>
                     </a>
                 </div>
+                <Unit />
                 <SemesterPlan />
                 <SemesterPlan />
                 <SemesterPlan />
@@ -74,12 +76,12 @@ export function SemesterPlan() {
                 </a>
             </div>
 
-            <Unit />
+            <EmptyUnit />
         </div>
     )
 }
 
-export function Unit() {
+export function EmptyUnit() {
 
     return (
         <div className="degreeUnit">
@@ -87,6 +89,28 @@ export function Unit() {
                 <i className="material-icons">search</i>
             </a>
         </div>
+    )
+
+}
+
+export function Unit() {
+
+    return (
+        <a href="#">
+            <div className="degreeUnit">
+                <Stack spacing={1.5}>
+                    <div className="unitCode">
+                        <p>Unit code</p>
+                    </div>
+                    <div className="unitName">
+                        <p>Unit name</p>
+                    </div>
+                    <div className="creditPoints">
+                        <p>Credit points</p>
+                    </div>
+                </Stack>
+            </div>
+        </a>
     )
 
 }

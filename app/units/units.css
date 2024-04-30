@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-.unit_search {
+.unitSearch {
     height: 60px;
     margin: 10px 0;
     position: relative;
 
 }
 
-.unit_search .unit_search_input {
+.unitSearch .unitSearchInput {
     padding: 5px;
     padding-left: 50px;
     border-radius: 15px;
@@ -31,7 +31,7 @@ input:focus, input:first-line {
     background-color: white;
 }
 
-.input_label p {
+.inputLabel p {
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -41,10 +41,10 @@ input:focus, input:first-line {
     z-index: 0;
 }
 
-.unit_search_input:valid { background-color:white; }
-.unit_search_input:invalid{ background-color:transparent; }
+.unitSearchInput:valid { background-color:white; }
+.unitSearchInput:invalid{ background-color:transparent; }
 
-.unit_search .unit_search_input:focus {
+.unitSearch .unitSearchInput:focus {
     border: 2px solid red;
 }
 

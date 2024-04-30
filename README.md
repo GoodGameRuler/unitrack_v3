@@ -1,8 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# UniTrack V3
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+	- [Commit Messages](#commit-messages)
+	- [Branch Names](#branch-names)
+	- [Pull Requests](#pull-requests)
+		- [Title](#title)
+		- [Description](#description)
+		- [Example Pull Request](#example-pr)
+	- [Open Source](#open-source)
+- [Developing Team](#developing-team)
+
+## Overview
+
+This project was initiated for Coding Fest 2023 by [Udit
+Samant](https://github.com/goodgameruler), [Jennifer
+Tan](https://github.com/jennifermtan), [Devanshi
+Mirchandani](https://github.com/devanshimirchandani), and [Parth
+Bhargava](https://github.com/gitparth12). The purpose of UniTrack is to present
+a university services platform with a better user experience, mainly targeting
+degree planning, unit selection, and time table selection.
+
+After two iterations of technical stacks for this project we have settled on React, Next.Js, and Vercel
+
+We welcome any collaboration and contributions from the public to this project, please refer to the [open source contribution](#open-source) section.
+
+## Getting Started / Installation
+
+*SSH authentication is recommended, visit [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for more information.*
+1. Clone the repo using `git clone --recurse-submodules git@github.com:USYDUniTrack/unitrack_v3.git
+2. Run development server based on your preferred package manager.
 
 ```bash
 npm run dev
@@ -16,21 +46,66 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Read the guidelines below to write good commit messages, branch names, and make pull requests that follow the conventions we will be using throughout the project.
 
-## Learn More
+### Commit Messages
 
-To learn more about Next.js, take a look at the following resources:
+- Capitalise the subject line.
+- Do not end with a period.
+- Use imperative mood, i.e. instead of *"Added ..."* write *"Add ..."*.
+- Keep messages logical and relevant, do not write things like *"Please work"* or *"I hate frontend"*. To help decide the extent of this, imagine trying to access a point in the project 2 weeks ago, it would be better to have something like *"Add CSS for Navbar template"* or , so that we know from a glance what the commit is for.
+- For more detailed messages, use `git commit -m <title> -m <description>`, however short and concise is still preferred.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Branch Names
+Make a branch using `git checkout -b <branch_name>`.
+- Names fall under one of **4** categories
+	- Minor Feature: `minor-FeatureName`
+	- Major Feature: `major-FeatureName`
+	- Patch: `patch-PatchName`
+	- Miscellaneous: `name`
+		- For example `documentation` for changing the README, or adding another markdown
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Pull Requests
+*Summarised from [this article](https://namingconvention.org/git/pull-request-naming.html).*
 
-## Deploy on Vercel
+#### Title
+- Short and descriptive summary
+- Start with corresponding ticket/story id (e.g. from Jira, GitHub issue)
+- Should be capitalized and written in imperative present tense
+- Do not end with period
+- Suggested format: *#<Ticket_ID> PR description*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Description
+- Separated with a blank line from the subject
+- Explain what, why, etc.
+- Max 72 chars
+- Each paragraph capitalized
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Example Pull Request
+```
+This pull request is part of the work to make it easier for people to contribute to naming convention guides. One of the easiest way to make small changes would be using the Edit on Github button.
+
+To achieve this, we needed to:
+- Find the best Gitbook plugin which can do the work
+- Integrate it in all the pages to redirect the user to the right page on GitHub for editing
+- Make it visible on the page so users can notice it easily
+```
+
+### Open Source
+
+Follow the steps below to suggest a patch or a feature for this project. For information on naming conventions for pull requests or commits, read the rest of the [contributing](#contributing) section above.
+
+1. Fork the repo
+2. Create your Feature Branch: `git checkout -b <branch_name>`
+3. Commit your Changes
+4. Push to the Branch: `git push origin <branch_name>`
+5. Open a Pull Request
+
+## Developing Team
+- [Parth Bhargava](https://github.com/gitparth12)
+- [Devanshi Mirchandani](https://github.com/devanshimirchandani)
+- [Jennifer Tan](https://github.com/jennifermtan)
+- [Udit Samant](https://github.com/goodgameruler)
+- Antriksh Dhand

@@ -82,7 +82,6 @@ export function SemesterPlan() {
 }
 
 export function EmptyUnit() {
-
     return (
         <div className="degreeUnit">
             <a href="#">
@@ -90,11 +89,9 @@ export function EmptyUnit() {
             </a>
         </div>
     )
-
 }
 
 export function Unit() {
-
     return (
         <a href="#">
             <div className="degreeUnit">
@@ -112,5 +109,6 @@ export function Unit() {
             </div>
         </a>
     )
-
 }
+
+

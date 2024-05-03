@@ -95,7 +95,7 @@ export function Unit() {
     return (
         <a href="#">
             <div className="degreeUnit">
-                <Stack spacing={1.5}>
+                <div className="unitDetails">
                     <div className="unitCode">
                         <p>Unit code</p>
                     </div>
@@ -105,7 +105,7 @@ export function Unit() {
                     <div className="creditPoints">
                         <p>Credit points</p>
                     </div>
-                </Stack>
+                </div>
             </div>
         </a>
     )
@@ -114,11 +114,11 @@ export function Unit() {
 export function DeleteConfimation() {
     return (
         <div className="deleteConfirmation">
-            <p>Are you sure you want to remove <em>UNIT CODE</em>?</p>
-            <Stack direction="row" spacing={2}>
-                <Button variant="outlined" sx={{color: "#DD432B", borderColor: "#DD432B"}}>CANCEL</Button>
-                <Button variant="contained" sx={{color: "white", backgroundColor: "#DD432B"}}>DELETE</Button>
-            </Stack> 
+            <p>Are you sure you want to remove <span>UNIT CODE</span>?</p>
+            <div className="buttonContainer">
+                <button id="cancel">CANCEL</button>
+                <button id="delete">DELETE</button>
+            </div>
         </div>
     )
 }

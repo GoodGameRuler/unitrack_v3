@@ -1,22 +1,86 @@
-.circlesContainer {
+.profileContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
 
 .profilePhoto {
-    height: 40px;
-    width: 40px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 5px 5px gray;
-    margin: 0 5px;
 }
 
-.githubSVG {
-    background-image: url("/static/github_icon.svg");
+.jenny, .udit, .githubSVG {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.jenny {
+    background-image: url("./images/jenny.png");
+}
+
+.udit {
+    background-image: url("./images/udit.jpeg");
+}
+
+.githubSVG {
+    background-image: url("./images/github-mark.svg");
+}
+
+.profileLink {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pageHeader {
+    font-size: 50px;
+}
+
+.body {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.body em {
+    font-weight: 600;
+    color: #DD432B;
+}
+
+.body a {
+    text-decoration: underline;
+}
+
+.aboutUsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+.aboutUsContainer > .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.aboutUsContainer > .subheading {
+    font-size: 30px;
+    text-align: center;
+}
+
+.divider hr {
+    border-color: black;
+    opacity: 0.2;
+    border-width: 1px;
 }

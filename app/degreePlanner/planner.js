@@ -1,5 +1,4 @@
 import "./detailPlanner.css"
-import {Stack, Button} from '@mui/material';
 
 
 export function Planner() {

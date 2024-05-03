@@ -6,7 +6,7 @@ export default function Home() {
       <div className="contentContainer">
         <h1 className="pageHeader"> Welcome to UniTrack! </h1>
         <div className="body">
-          <p> Unitrack features an easy and simple way to plan your degree at The University of Sydney. Click on Degree Planning to Get Started! </p>
+          <p> Unitrack features an easy and simple way to plan your degree at The University of Sydney. Click on <em>Degree Plan</em> to get started! </p>
         </div>
       </div>
       <Divider />

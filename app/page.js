@@ -26,7 +26,7 @@ export default function Home() {
       
       <div className="contentContainer">
         <h2 className="subheading"> Meet the Current Team </h2>
-        <div class="profileContainer">
+        <div className="profileContainer">
             <a href="https://github.com/jennifermtan" className="profilePhoto jenny"> </a>
             <a href="https://github.com/GoodGameRuler" className="profilePhoto udit"> </a>
         </div>

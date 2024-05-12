@@ -29,6 +29,8 @@ export default function Home() {
         <div className="profileContainer">
             <a href="https://github.com/jennifermtan" className="profilePhoto jenny"> </a>
             <a href="https://github.com/GoodGameRuler" className="profilePhoto udit"> </a>
+            <a href="https://github.com/gitparth12" className="profilePhoto parth"> </a>
+            <a href="https://github.com/devanshimirchandani" className="profilePhoto devu"> </a>
         </div>
       </div>
       <Divider />

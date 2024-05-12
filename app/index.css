@@ -14,7 +14,7 @@
     background-color: white;
 }
 
-.jenny, .udit, .githubSVG {
+.jenny, .udit, .parth, .devu,.githubSVG {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,6 +26,14 @@
 
 .udit {
     background-image: url("./images/udit.jpeg");
+}
+
+.parth {
+    background-image: url("./images/parth.jpeg");
+}
+
+.devu {
+    background-image: url("./images/devu.jpeg");
 }
 
 .githubSVG {

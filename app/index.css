@@ -1,22 +1,54 @@
-.circlesContainer {
+.profileContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
 
 .profilePhoto {
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 5px 5px gray;
-    margin: 0 5px;
-}
-
-.githubSVG {
-    background-image: url("/static/github_icon.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.githubSVG {
+    background-image: url("/images/github-mark.svg");
+}
+
+.homePageHeader {
+    font-size: 50px;
+}
+
+.aboutUsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+.aboutUsContainer > .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.aboutUsContainer > .subheading {
+    font-size: 30px;
+    text-align: center;
+}
+
+.divider hr {
+    border-color: black;
+    opacity: 0.2;
+    border-width: 1px;
 }

@@ -25,12 +25,50 @@ export default function Home() {
       <Divider />
       
       <div className="contentContainer">
-        <h2 className="subheading"> Meet the Current Team </h2>
+        <h2 className="subheading"> Maintainers </h2>
         <div className="profileContainer">
-            <a href="https://github.com/jennifermtan" className="profilePhoto jenny"> </a>
-            <a href="https://github.com/GoodGameRuler" className="profilePhoto udit"> </a>
-            <a href="https://github.com/gitparth12" className="profilePhoto parth"> </a>
-            <a href="https://github.com/devanshimirchandani" className="profilePhoto devu"> </a>
+            <ProfileLink
+              key={'jennifermtan'}
+              username={'jennifermtan'}
+              imageUrl={'/images/jenny.png'}
+            />
+            <ProfileLink
+              key={'GoodGameRuler'}
+              username={'GoodGameRuler'}
+              imageUrl={'/images/udit.jpeg'}
+            />
+        </div>
+      </div>
+      <Divider />
+
+      <div className="contentContainer">
+        <h2 className="subheading"> Contributors </h2>
+        <div className="profileContainer">
+            <ProfileLink
+              key={'jennifermtan'}
+              username={'jennifermtan'}
+              imageUrl={'/images/jenny.png'}
+            />
+            <ProfileLink
+              key={'GoodGameRuler'}
+              username={'GoodGameRuler'}
+              imageUrl={'/images/udit.jpeg'}
+            />
+            <ProfileLink
+              key={'gitparth12'}
+              username={'gitparth12'}
+              imageUrl={'/images/parth.jpeg'}
+            />
+            <ProfileLink
+              key={'devanshimirchandani'}
+              username={'devanshimirchandani'}
+              imageUrl={'/images/devu.jpeg'}
+            />
+            <ProfileLink
+              key={'antrikshdhandv'}
+              username={'antrikshdhand'}
+              imageUrl={'/images/antriksh.png'}
+            />
         </div>
       </div>
       <Divider />
@@ -38,10 +76,13 @@ export default function Home() {
       <div className="contentContainer">
         <h2 className="subheading"> Keen to Contribute? </h2>
         <div className="profileContainer">
-            <a href="https://github.com/GoodGameRuler/unitrack_v3" className="profilePhoto githubSVG"></a>
+          <ProfileLink
+            key={'github'}
+            username={'GoodGameRuler/unitrack_v3'}
+            imageUrl={'/images/github-mark.svg'}
+          />
         </div>
       </div>
-
     </div>
   );
 }
@@ -53,3 +94,16 @@ const Divider = () => {
     </div>
   );
 };
+
+const ProfileLink = ({ username, imageUrl }) => {
+  const profileUrl = `https://github.com/${username}`;
+  
+  return (
+    <a
+      href={profileUrl}
+      className="profilePhoto"
+      style={{ backgroundImage: `url(${imageUrl})` }}
+    ></a>
+  );
+};
+

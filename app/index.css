@@ -8,61 +8,21 @@
 }
 
 .profilePhoto {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     background-color: white;
-}
-
-.jenny, .udit, .parth, .devu,.githubSVG {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.jenny {
-    background-image: url("./images/jenny.png");
-}
-
-.udit {
-    background-image: url("./images/udit.jpeg");
-}
-
-.parth {
-    background-image: url("./images/parth.jpeg");
-}
-
-.devu {
-    background-image: url("./images/devu.jpeg");
 }
 
 .githubSVG {
-    background-image: url("./images/github-mark.svg");
-}
-
-.profileLink {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("/images/github-mark.svg");
 }
 
 .homePageHeader {
     font-size: 50px;
-}
-
-.body {
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.5em;
-}
-
-.body em {
-    font-weight: 600;
-    color: #DD432B;
-}
-
-.body a {
-    text-decoration: underline;
 }
 
 .aboutUsContainer {

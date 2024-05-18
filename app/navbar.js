@@ -10,7 +10,7 @@ export function NavBar() {
     return (
         <div className="navBarContainer">
             <div className="navBarTitle">
-                <Link className="title" href="/">LOGO</Link>
+                <Link className="title" href="/">Unitrack</Link>
             </div>
             <div className="navBarItemsContainer">
                 <button className="navBarButton navBarItem" onClick={() => router.push("/degreePlanner")}>

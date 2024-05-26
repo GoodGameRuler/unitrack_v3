@@ -24,14 +24,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-    font-size: 20px;
-    text-align: justify;
+    font-size: 15px;
     line-height: 1.5em;
-}
-
-em {
-	font-weight: 600;
-	color: #DD432B;
 }
 
 ol, ul {

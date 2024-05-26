@@ -9,9 +9,7 @@ export function NavBar() {
 
     return (
         <div className="navBarContainer">
-            <div className="navBarTitle">
-                <Link className="title" href="/">Unitrack</Link>
-            </div>
+            <Link className="navBarTitle" href="/">Unitrack</Link>
             <div className="navBarItemsContainer">
                 <button className="navBarButton navBarItem" onClick={() => router.push("/degreePlanner")}>
                     <i className="material-icons">edit_calendar</i>&nbsp;&nbsp;

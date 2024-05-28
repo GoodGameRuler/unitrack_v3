@@ -10,7 +10,7 @@
 }
 
 .navBarTitle {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
     text-decoration: none;
@@ -27,7 +27,7 @@
 
 .navBarButton {
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -47,7 +47,7 @@
 }
 
 .navBarItem i {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* .userLoginDetails {

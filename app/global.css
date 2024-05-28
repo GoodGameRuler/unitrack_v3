@@ -8,7 +8,7 @@ input[type="checkbox"] {
 .pageContainer {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 250px 1fr;
     box-sizing: border-box;
     height: 100%;
     width: 100%;

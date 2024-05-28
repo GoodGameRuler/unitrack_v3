@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./reset.css"
 import "./global.css"
 
-import { NavBar } from "./navbar";
+import { NavBar } from "./navBar";
 
 export const metadata = {
   title: "UniTrack",

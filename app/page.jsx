@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./index.css"
 
 export default function Home() {
@@ -10,12 +11,12 @@ export default function Home() {
         </div>
       </div>
       <Divider />
-      
+
       <div className="contentContainer">
         <h2 className="subheading"> Our Story </h2>
         <div className="body aboutUs">
-          <p> 
-            Unitrack first came to life as a project submission for <a href="https://www.sydney.edu.au/engineering/industry-and-community/partner-with-us/coding-fest.html">Coding Fest 2023</a> by
+          <p>
+            Unitrack first came to life as a project submission for <Link href="https://www.sydney.edu.au/engineering/industry-and-community/partner-with-us/coding-fest.html" target="_blank" rel="noopener noreferrer">Coding Fest 2023</Link> by
             4 undergraduate students: Udit Samant, Jennifer Tan, Parth Bhargava, Devanshi Mirchandani. It won the Coding Fest 2023 Citadel Securities Best UG Junior Project Award Champion.
             As undergraduates, one of the toughest challenges we encountered upon starting university was navigating degree planning with multiple websites and resources. Hence, we decided to create
             our own degree planner to streamline the process of degree planning for future USYD students!
@@ -23,7 +24,7 @@ export default function Home() {
         </div>
       </div>
       <Divider />
-      
+
       <div className="contentContainer">
         <h2 className="subheading"> Maintainers </h2>
         <div className="profileContainer">
@@ -66,13 +67,12 @@ const Divider = () => {
 
 const ProfileLink = ({ username, imageUrl }) => {
   const profileUrl = `https://github.com/${username}`;
-  
+
   return (
-    <a
+    <Link
       href={profileUrl}
       className="profilePhoto"
       style={{ backgroundImage: `url(${imageUrl})` }}
-    ></a>
+    ></Link>
   );
 };
-

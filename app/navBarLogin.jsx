@@ -1,5 +1,8 @@
 
-export function navBarLogin() {
+// TODO Later
+// This functional contains the login/register buttons for the navbar
+// At the moment do not export to prevent access of the api
+function navBarLogin() {
     return (
         <div className="userLoginDetails">
             <div className="loginInfoContainer" id="scrollBot">

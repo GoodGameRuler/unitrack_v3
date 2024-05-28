@@ -9,10 +9,11 @@
 
 .formElement .degreeLabel {
     font-size: 18px;
+    display: flex;
 }
 
 .formElement .submitButton {
-    width: 100%;
+    width: 80%;
     height: 45px;
     border: none;
     outline: none;
@@ -39,4 +40,8 @@
 
 .formElement .degreeSelect:invalid {
     color: #999;
+}
+
+#degree.degreeSelect,#firstMajor.degreeSelect,#secondMajor.degreeSelect,#minor.degreeSelect{
+    width: 80%;
 }

@@ -1,11 +1,11 @@
 .detailsContainer {
-    min-width: 70%;
+    max-width: 60%; /* Adjust the maximum width of the form container */
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center-align the elements horizontally */
+    align-items: center; /* Center-align the elements vertically */
     flex-direction: column;
-    height: 90vh;
+    height: 90vh; /* Optionally maintain container height */
 }
 
 .formElement {
@@ -18,7 +18,7 @@
 }
 
 .formElement .submitButton {
-    width: 85%;
+    width: 80%;
     height: 45px;
     border: none;
     outline: none;
@@ -30,7 +30,7 @@
 
 .formElement .degreeSelect {
     margin-top: 15px;
-    width: 85%; /* Ensure it fills the container */
+    width: 100%; /* Ensure it fills the container */
     padding: 8px 2.2em 8px 8px; /* Ensure text doesn't overlap arrow */
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.7);

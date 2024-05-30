@@ -28,6 +28,8 @@ After two iterations of technical stacks for this project we have settled on Rea
 
 We welcome any collaboration and contributions from the public to this project, please refer to the [open source contribution](#open-source) section.
 
+_We would like to acknowledge Antriksh Dhand in his contribution as the original ideator of this project_
+
 ## Getting Started / Installation
 
 *SSH authentication is recommended, visit [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for more information.*

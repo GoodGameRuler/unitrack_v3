@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./detailPlanner.css"
 
 export function Planner() {
@@ -7,9 +8,9 @@ export function Planner() {
             <div className="degreePlan">
                 <div className="heading">
                     <p>Bachelor of Advanced Computing</p>
-                    <a href="#">
+                    <Link href="#">
                         <i className="material-icons">edit</i>
-                    </a>
+                    </Link>
                 </div>
                 <SemesterPlan />
                 <SemesterPlan />
@@ -59,8 +60,9 @@ function DegreeRequirements() {
 
     )
 }
-            function updateProgressBar(credits, totalCredits) {
-            }
+
+function updateProgressBar(credits, totalCredits) {
+}
 
 export function SemesterPlan() {
     return (
@@ -69,9 +71,9 @@ export function SemesterPlan() {
 
             <div className="semesterRow">
                 <p id="semester">Semester 2</p>
-                <a href="#">
+                <Link href="#">
                     <i className="material-icons">add_box</i>
-                </a>
+                </Link>
             </div>
 
             <Unit />
@@ -83,9 +85,9 @@ export function Unit() {
 
     return (
         <div className="degreeUnit">
-            <a href="#">
+            <Link href="#">
                 <i className="material-icons">search</i>
-            </a>
+            </Link>
         </div>
     )
 

@@ -2,17 +2,19 @@
     min-width: 70%;
     max-width: 80%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
 }
 
 .unitSearch {
     height: 60px;
     margin: 10px 0;
     position: relative;
-
 }
 
 .unitSearch .unitSearchInput {
-    padding: 5px;
     padding-left: 50px;
     border-radius: 15px;
     border: 2px solid red;
@@ -49,10 +51,12 @@ input:focus, input:first-line {
 }
 
 .filterAccordian {
-    margin: 10px 0;
     padding: 10px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .check {

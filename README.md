@@ -50,6 +50,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Read the guidelines below to write good commit messages, branch names, and make pull requests that follow the conventions we will be using throughout the project.
 
+### Issues
+We welcome contribution to this project. Changes to this repository will be recieved on a issue assigned basis. To contribute...
+
+- [ ] Find an issue that is unassigned, unmarked, or contains the help wanted label.
+- [ ] Change code and create a pull request closing the issue - see [link](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue). After which a maintainer will assign you to the issue (If this issue is large in complexity and you want to be assigned to the issue, comment on the issue).
+
 ### Commit Messages
 
 - Capitalise the subject line.
@@ -90,20 +96,22 @@ Examples
 
 #### Description
 - Separated with a blank line from the subject
-- Explain what, why, etc.
-- Max 72 chars
-- Each paragraph capitalized
+- Explain changes and justify
+- Separate different issues into different paragraphs (capitalising each paragraph)
+- We recommend using screenshots over long descriptions (A simple before and after will do)
+- If the description is longer than a paragraph include a `TLDR:` one-liner as the first line
 
 #### Example Pull Request
 ```
 TLDR: (Necessary for longer PRs) this PR defines PR message syntax.
 
-This pull request is part of the work to make it easier for people to contribute to naming convention guides. One of the easiest way to make small changes would be using the Edit on Github button.
+This pull request is part of the work to make it easier for people to contribute to naming convention guides.
 
-To achieve this, we needed to:
-- Find the best Gitbook plugin which can do the work
-- Integrate it in all the pages to redirect the user to the right page on GitHub for editing
-- Make it visible on the page so users can notice it easily
+To achieve this, we have:
+- Found an issue
+- Made a PR
+- Made clear the changes introduced
+- Included images
 ```
 
 ### Open Source

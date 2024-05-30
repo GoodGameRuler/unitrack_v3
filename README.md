@@ -61,11 +61,22 @@ Read the guidelines below to write good commit messages, branch names, and make 
 ### Branch Names
 Make a branch using `git checkout -b <branch_name>`.
 - Names fall under one of **4** categories
-	- Minor Feature: `minor-FeatureName`
-	- Major Feature: `major-FeatureName`
-	- Patch: `patch-PatchName`
+	- Minor Feature: `minor-featureName`
+	- Major Feature: `major-featureName`
+	- Patch: `patch-patchName`
 	- Miscellaneous: `name`
 		- For example `documentation` for changing the README, or adding another markdown
+
+_patch: a non API breaking change to the codebase - anyone that uses your code will not need to be concered with the changes you pushed._
+_minor: a minor API change to the codebase - anyone that uses your code will need to slightly modify implementation of their code._
+_major: a major API change to the codebase - generally breaks code, wherever used, and will need significant modification._
+
+Examples
+- Adding comments - patch
+- Image sizing changes (doesn't effect other code) - patch
+- Changing div css - minor
+- Changing div ordering - minor
+- Changing server API endpoints - major as it breaks other code.
 
 ### Pull Requests
 *Summarised from [this article](https://namingconvention.org/git/pull-request-naming.html).*
@@ -85,6 +96,8 @@ Make a branch using `git checkout -b <branch_name>`.
 
 #### Example Pull Request
 ```
+TLDR: (Necessary for longer PRs) this PR defines PR message syntax.
+
 This pull request is part of the work to make it easier for people to contribute to naming convention guides. One of the easiest way to make small changes would be using the Edit on Github button.
 
 To achieve this, we needed to:
@@ -108,4 +121,4 @@ Follow the steps below to suggest a patch or a feature for this project. For inf
 - [Devanshi Mirchandani](https://github.com/devanshimirchandani)
 - [Jennifer Tan](https://github.com/jennifermtan)
 - [Udit Samant](https://github.com/goodgameruler)
-- Antriksh Dhand
+- [Antriksh Dhand](#)

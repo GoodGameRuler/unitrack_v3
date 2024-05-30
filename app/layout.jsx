@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react"
 import "./reset.css"
 import "./global.css"
 
-import { NavBar } from "./navbar";
+import { NavBar } from "./navBar";
 
 export const metadata = {
   title: "UniTrack",

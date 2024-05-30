@@ -1,14 +1,21 @@
 .detailsContainer {
-    min-width: 70%;
+    width: 60%; /* Adjust the width of the form container */
+    min-width: 300px; /* Ensure a minimum width */
+    max-width: 800px; /* Ensure a maximum width */
     box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Center-align the elements horizontally */
+    flex-direction: column; /* Align items vertically */
 }
 
 .formElement {
+    width: 100%; /* Ensure form elements take up full width */
     margin-bottom: 30px;
 }
 
 .formElement .degreeLabel {
     font-size: 18px;
+    display: flex;
 }
 
 .formElement .submitButton {

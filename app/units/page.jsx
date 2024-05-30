@@ -3,7 +3,7 @@ import "./units.css";
 function Units() {
     return (
         <div className="unitSearchPage">
-            <h2 className="pageHeader"> Find a unit outline </h2>
+            <h2 className="pageHeader" id="unitPageHeader">Find a unit outline</h2>
             <p> Unit outlines help you plan your unit choices, organise your studies and assessments, and provide evidence of the topics you have studied. Unit outlines will be available 2 weeks before the first day of teaching. </p>
 
             <form action="" className="searchFilter">

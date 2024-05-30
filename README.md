@@ -51,7 +51,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Read the guidelines below to write good commit messages, branch names, and make pull requests that follow the conventions we will be using throughout the project.
 
 ### Issues
-We welcome contribution to this project. Changes to this repository will be recieved on a issue assigned basis. To contribute...
+We welcome contribution to this project. Changes to this repository will be received on a issue assigned basis. To contribute...
 
 - [ ] Find an issue that is unassigned, unmarked, or contains the help wanted label.
 - [ ] Change code and create a pull request closing the issue - see [link](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue). After which a maintainer will assign you to the issue (If this issue is large in complexity and you want to be assigned to the issue, comment on the issue).
@@ -73,7 +73,7 @@ Make a branch using `git checkout -b <branch_name>`.
 	- Miscellaneous: `name`
 		- For example `documentation` for changing the README, or adding another markdown
 
-_patch: a non API breaking change to the codebase - anyone that uses your code will not need to be concered with the changes you pushed._
+_patch: a non API breaking change to the codebase - anyone that uses your code will not need to be concerned with the changes you pushed._
 _minor: a minor API change to the codebase - anyone that uses your code will need to slightly modify implementation of their code._
 _major: a major API change to the codebase - generally breaks code, wherever used, and will need significant modification._
 

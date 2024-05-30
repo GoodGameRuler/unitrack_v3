@@ -49,7 +49,6 @@ input:focus, input:first-line {
     outline: none;
     background-color: #ffe9e5;
     border: none;
-    /* border: 3px solid #DD432B; */
 }
 
 .filterAccordian {

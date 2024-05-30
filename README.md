@@ -121,4 +121,4 @@ Follow the steps below to suggest a patch or a feature for this project. For inf
 - [Devanshi Mirchandani](https://github.com/devanshimirchandani)
 - [Jennifer Tan](https://github.com/jennifermtan)
 - [Udit Samant](https://github.com/goodgameruler)
-- [Antriksh Dhand](#)
+- [Antriksh Dhand](https://github.com/antrikshdhand)

@@ -28,6 +28,8 @@ After two iterations of technical stacks for this project we have settled on Rea
 
 We welcome any collaboration and contributions from the public to this project, please refer to the [open source contribution](#open-source) section.
 
+_We would like to acknowledge Antriksh Dhand in his contribution as the original ideator of this project_
+
 ## Getting Started / Installation
 
 *SSH authentication is recommended, visit [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for more information.*
@@ -50,6 +52,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Read the guidelines below to write good commit messages, branch names, and make pull requests that follow the conventions we will be using throughout the project.
 
+### Issues
+We welcome contribution to this project. Changes to this repository will be received on a issue assigned basis. To contribute...
+
+- [ ] Find an issue that is unassigned, unmarked, or contains the help wanted label.
+- [ ] Change code and create a pull request closing the issue - see [link](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue). After which a maintainer will assign you to the issue (If this issue is large in complexity and you want to be assigned to the issue, comment on the issue).
+
 ### Commit Messages
 
 - Capitalise the subject line.
@@ -61,11 +69,22 @@ Read the guidelines below to write good commit messages, branch names, and make 
 ### Branch Names
 Make a branch using `git checkout -b <branch_name>`.
 - Names fall under one of **4** categories
-	- Minor Feature: `minor-FeatureName`
-	- Major Feature: `major-FeatureName`
-	- Patch: `patch-PatchName`
+	- Minor Feature: `minor-featureName`
+	- Major Feature: `major-featureName`
+	- Patch: `patch-patchName`
 	- Miscellaneous: `name`
 		- For example `documentation` for changing the README, or adding another markdown
+
+_patch: a non API breaking change to the codebase - anyone that uses your code will not need to be concerned with the changes you pushed._
+_minor: a minor API change to the codebase - anyone that uses your code will need to slightly modify implementation of their code._
+_major: a major API change to the codebase - generally breaks code, wherever used, and will need significant modification._
+
+Examples
+- Adding comments - patch
+- Image sizing changes (doesn't effect other code) - patch
+- Changing div css - minor
+- Changing div ordering - minor
+- Changing server API endpoints - major as it breaks other code.
 
 ### Pull Requests
 *Summarised from [this article](https://namingconvention.org/git/pull-request-naming.html).*
@@ -78,19 +97,25 @@ Make a branch using `git checkout -b <branch_name>`.
 - Suggested format: *#<Ticket_ID> PR description*
 
 #### Description
+- Closing keyword with issue number - see [link](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) (e.g. Closes #0).
 - Separated with a blank line from the subject
-- Explain what, why, etc.
-- Max 72 chars
-- Each paragraph capitalized
+- Explain changes and justify
+- Separate different issues into different paragraphs (capitalising each paragraph)
+- We recommend using screenshots over long descriptions (A simple before and after will do)
+- If the description is longer than a paragraph include a `TLDR:` one-liner as the first line
 
 #### Example Pull Request
 ```
-This pull request is part of the work to make it easier for people to contribute to naming convention guides. One of the easiest way to make small changes would be using the Edit on Github button.
+TLDR: (Necessary for longer PRs) this PR defines PR message syntax.
+resolves/closes/fixes #ISSUE_NO (, resolves/closes/fixes #ISSUE_NO2 (, ...))
 
-To achieve this, we needed to:
-- Find the best Gitbook plugin which can do the work
-- Integrate it in all the pages to redirect the user to the right page on GitHub for editing
-- Make it visible on the page so users can notice it easily
+This pull request is part of the work to make it easier for people to contribute to naming convention guides.
+
+To achieve this, we have:
+- Found an issue
+- Made a PR
+- Made clear the changes introduced
+- Included images
 ```
 
 ### Open Source
@@ -108,4 +133,4 @@ Follow the steps below to suggest a patch or a feature for this project. For inf
 - [Devanshi Mirchandani](https://github.com/devanshimirchandani)
 - [Jennifer Tan](https://github.com/jennifermtan)
 - [Udit Samant](https://github.com/goodgameruler)
-- Antriksh Dhand
+- [Antriksh Dhand](https://github.com/antrikshdhand)

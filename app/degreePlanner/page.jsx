@@ -51,7 +51,7 @@ function DegreePlanner() {
                         </select>
                     </div>
                     <div className="formElement">
-                        <button className="submitButton" type="submit">FINISH</button>
+                        <button className="submitButton" type="submit">START PLANNING</button>
                     </div>
                 </div>
             </form>

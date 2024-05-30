@@ -95,6 +95,7 @@ Examples
 - Suggested format: *#<Ticket_ID> PR description*
 
 #### Description
+- Closing keyword with issue number - see [link](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) (e.g. Closes #0).
 - Separated with a blank line from the subject
 - Explain changes and justify
 - Separate different issues into different paragraphs (capitalising each paragraph)
@@ -104,6 +105,7 @@ Examples
 #### Example Pull Request
 ```
 TLDR: (Necessary for longer PRs) this PR defines PR message syntax.
+resolves/closes/fixes #ISSUE_NO (, resolves/closes/fixes #ISSUE_NO2 (, ...))
 
 This pull request is part of the work to make it easier for people to contribute to naming convention guides.
 

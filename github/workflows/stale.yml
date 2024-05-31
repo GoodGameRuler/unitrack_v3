@@ -1,0 +1,17 @@
+name: 'Close stale issues and PRs'
+on:
+  schedule:
+    - cron: '30 1 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 14
+          days-before-close: 7
+          stale-issue-message: 'Stale issue message - 7 days till automatic close'
+          stale-pr-message: 'Stale pull request message - 7 days till automatic close'
+          exempt-issue-labels: 'awaiting-approval,work-in-progress'
+          exempt-pr-labels: 'awaiting-approval,work-in-progress'

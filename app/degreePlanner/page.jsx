@@ -113,14 +113,9 @@ function DegreePlanner() {
               </select>
             </div>
             <div className="formElement">
-              <Button
-                variant="contained"
-                color="primary"
-                type="submit"
-                fullWidth
-              >
+              <button className="submitButton" type="submit">
                 START PLANNING
-              </Button>
+              </button>
             </div>
           </div>
         </form>

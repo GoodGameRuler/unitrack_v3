@@ -1,9 +1,10 @@
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 
 import "./reset.css"
 import "./global.css"
 
-import { NavBar } from "./navbar";
+import { NavBar } from "./navBar";
 
 export const metadata = {
   title: "UniTrack",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </head>
       <body>
+        <Analytics />
         <div className="pageContainer">
             <NavBar />
             <div className="pageContentsWrapper">

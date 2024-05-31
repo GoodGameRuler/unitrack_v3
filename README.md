@@ -36,6 +36,8 @@ _We would like to acknowledge Antriksh Dhand in his contribution as the original
 1. Clone the repo using `git clone --recurse-submodules git@github.com:USYDUniTrack/unitrack_v3.git
 2. Run development server based on your preferred package manager.
 
+_NOTE: Maintainer and DB-Codeowner/DB-Contributor Developers please use `vercel dev`_
+
 ```bash
 npm run dev
 # or
@@ -44,6 +46,8 @@ yarn dev
 pnpm dev
 # or
 bun dev
+# or
+vercel dev #strictly for maintainers and testing postgres db
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

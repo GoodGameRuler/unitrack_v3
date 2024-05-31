@@ -2,7 +2,7 @@
 _A good styling rulset lowers potential of misunderstanding through different syntax._
 
 ### React Components
-_Most Importantly
+_Most Importantly_
 
 - React components should be kept neatly in the components directory of app/ to be reused or defined with `componentComponentName` syntax in a subdirectory.
 - Use camelCase for the file name, and PascalCase for the component itself.

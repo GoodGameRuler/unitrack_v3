@@ -21,6 +21,7 @@ _Good code defines itself._
 ### CSS
 - Minimise the usage of any element level CSS.
 - use camelCase for class and ID names.
+- Use capitalised hex values for colours. Usage of #FFFFFF and #FFFFFFFF is prefered over rbg and rbga, but not requred. Use at your discretion - of course rgba is much more readable when it comes to opacity value like 47%.
 
 ### Miscellaneous
 - File names - use `.js` for JavaScript and `.jsx` for react components strictly.

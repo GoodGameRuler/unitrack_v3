@@ -12,6 +12,8 @@
     height: 60px;
     margin: 10px 0;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .unitSearch .unitSearchInput {
@@ -30,8 +32,10 @@
     caret-color: rgb(54, 54, 54);
 }
 
-input:focus, input:first-line {
-    background-color: white;
+.inputLabel {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .inputLabel p {
@@ -54,12 +58,27 @@ input:focus, input:first-line {
 }
 
 .filterAccordian {
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.filtersContainer {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 1;
+}
+
+.clearFilter {
+    background-color: transparent;
+    border: none;
+    color: #DD432B;
+    font-size: 15px;
+    text-align: right;
 }
 
 .check {
@@ -89,12 +108,17 @@ fieldset.row {
 }
 
 span.icon {
-    position: absolute;
     color: #DD432B;
-    font-size: 40px;
-    top: 50%;
-    transform: translate(20%, -50%);
+    font-size: 35px;
     z-index: 2;
+}
+
+#search {
+    margin-left: 10px;
+}
+
+#filter {
+    margin-right: 10px;
 }
 
 #unitPageHeader {

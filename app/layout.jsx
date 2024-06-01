@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "./reset.css"
 import "./global.css"
@@ -18,6 +19,8 @@ export default function RootLayout({ children }) {
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </head>
       <body>
+
+        {/* Reports visits to Vercel */}
         <Analytics />
         <div className="pageContainer">
             <NavBar />
@@ -27,6 +30,8 @@ export default function RootLayout({ children }) {
                 </div>
             </div>
         </div>
+
+        <SpeedInsights />
       </body>
     </html>
   );

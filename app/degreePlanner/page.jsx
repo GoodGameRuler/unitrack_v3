@@ -14,8 +14,8 @@ function DegreePlanner() {
                 <div className="detailsForm">
                     <div className="formElement">
                         <label className="degreeLabel" htmlFor="degree">Degree</label>
-                        <select id="degree" className="degreeSelect" required>
-                            <option value="" disabled selected>Select degree</option>
+                        <select id="degree" className="degreeSelect" defaultValue="0" required>
+                            <option value="0" disabled>Select degree</option>
                             <option value="1">Bachelor of Science</option>
                             <option value="2">Bachelor of Advanced Computing</option>
                             <option value="3">Bachelor of Interaction Design/Bachelor of Advanced Studies</option>
@@ -23,8 +23,8 @@ function DegreePlanner() {
                     </div>
                     <div className="formElement">
                         <label className="degreeLabel" htmlFor="firstMajor">Major</label>
-                        <select id="firstMajor" className="degreeSelect" required>
-                            <option value="" disabled selected>Select major</option>
+                        <select id="firstMajor" className="degreeSelect" defaultValue="0" required>
+                            <option value="0" disabled>Select major</option>
                             <option value="1">Computer Science</option>
                             <option value="2">Data Science</option>
                             <option value="3">Development</option>
@@ -33,7 +33,6 @@ function DegreePlanner() {
                     <div className="formElement">
                         <label className="degreeLabel" htmlFor="secondMajor">Second major (if applicable)</label>
                         <select id="secondMajor" className="degreeSelect" defaultValue="4" required>
-                            <option value="" disabled selected>Select major</option>
                             <option value="1">Computer Science</option>
                             <option value="2">Data Science</option>
                             <option value="3">Software Development</option>
@@ -43,7 +42,6 @@ function DegreePlanner() {
                     <div className="formElement">
                         <label className="degreeLabel" htmlFor="minor">Minor (if applicable)</label>
                         <select id="minor" className="degreeSelect" defaultValue="4" required>
-                            <option value="" disabled selected>Select minor</option>
                             <option value="1">Mathematics</option>
                             <option value="2">Computer Science</option>
                             <option value="3">Design</option>

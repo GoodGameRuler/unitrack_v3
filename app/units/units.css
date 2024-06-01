@@ -48,8 +48,13 @@
     z-index: 0;
 }
 
-.unitSearchInput:valid { background-color:white; }
-.unitSearchInput:invalid{ background-color:transparent; }
+.unitSearchInput:valid { 
+    background-color: white; 
+}
+
+.unitSearchInput:invalid { 
+    background-color: transparent; 
+}
 
 .unitSearch .unitSearchInput:focus {
     outline: none;
@@ -64,6 +69,7 @@
     padding: 15px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    user-select: none;
 }
 
 .filtersContainer {
@@ -79,6 +85,7 @@
     color: #DD432B;
     font-size: 15px;
     text-align: right;
+    cursor: pointer; /* Added cursor pointer for clear button */
 }
 
 .check {
@@ -111,6 +118,13 @@ span.icon {
     color: #DD432B;
     font-size: 35px;
     z-index: 2;
+    cursor: pointer; /* Add cursor pointer */
+    user-select: none; /* Make it unselectable */
+}
+
+span.icon:hover {
+    color: black; /* Change color on hover */
+    background-color: rgba(0, 0, 0, 0.1); /* Add hover effect highlight */
 }
 
 #search {

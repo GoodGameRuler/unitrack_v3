@@ -3,8 +3,21 @@
 import { useEffect, useState } from "react";
 import { Planner } from "./panner";
 
-const env = process.env.NODE_ENV;
-const baseURL = env === "development" ? "http://localhost:3000" : "http://www.unitrack.au";
+const env = process.env.NEXT_PUBLIC_VERCEL_ENV;
+var baseURL = "";
+
+if (env === "production") {
+    var baseURL = "https://www.unitrack.au";
+
+} else if (env === "preview") {
+    var baseURL = `https://${process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL}`;
+
+} else if (env === "development") {
+    var baseURL = "https://localhost:3000";
+}
+
+
+console.log(process.env.BASEURL);
 
 export default function Details({degrees}) {
     const [shouldShowNextPage, setShouldShowNextPage] = useState(false);

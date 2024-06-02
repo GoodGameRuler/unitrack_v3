@@ -14,6 +14,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 .unitSearch .unitSearchInput {
@@ -81,13 +82,7 @@
     color: #DD432B;
     font-size: 15px;
     text-align: right;
-    user-select: none; /* Make the filter unselectable */
-}
-
-.clearFilter:hover {
-    color: black; /* Change to black on hover */
-    cursor: pointer; /* Change cursor to pointer */
-    background-color: rgba(0, 0, 0, 0.1); /* Add a highlight effect on hover */
+    user-select: none; 
 }
 
 .check {
@@ -128,16 +123,16 @@ span.icon {
 
 #filter {
     margin-right: 10px;
-    background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent circle */
-    border-radius: 50%; /* Circular background */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%; 
     padding: 10px;
-    cursor: pointer; /* Pointer cursor to indicate clickability */
+    cursor: pointer; 
+    user-select: none;
 }
 
 #filter:hover {
-    background-color: rgba(0, 0, 0, 0.2); /* Highlight effect on hover */
+    background-color: rgba(0, 0, 0, 0.2); 
 }
-
 #unitPageHeader {
     text-align: left;
 }

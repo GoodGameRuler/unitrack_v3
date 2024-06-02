@@ -30,6 +30,7 @@
     background-color: transparent;
     font-size: 20px;
     caret-color: rgb(54, 54, 54);
+    user-select: none;
 }
 
 .inputLabel {
@@ -48,13 +49,8 @@
     z-index: 0;
 }
 
-.unitSearchInput:valid { 
-    background-color: white; 
-}
-
-.unitSearchInput:invalid { 
-    background-color: transparent; 
-}
+.unitSearchInput:valid { background-color: transparent; }
+.unitSearchInput:invalid{ background-color: transparent; }
 
 .unitSearch .unitSearchInput:focus {
     outline: none;
@@ -85,7 +81,13 @@
     color: #DD432B;
     font-size: 15px;
     text-align: right;
-    cursor: pointer; /* Added cursor pointer for clear button */
+    user-select: none; /* Make the filter unselectable */
+}
+
+.clearFilter:hover {
+    color: black; /* Change to black on hover */
+    cursor: pointer; /* Change cursor to pointer */
+    background-color: rgba(0, 0, 0, 0.1); /* Add a highlight effect on hover */
 }
 
 .check {
@@ -118,13 +120,6 @@ span.icon {
     color: #DD432B;
     font-size: 35px;
     z-index: 2;
-    cursor: pointer; /* Add cursor pointer */
-    user-select: none; /* Make it unselectable */
-}
-
-span.icon:hover {
-    color: black; /* Change color on hover */
-    background-color: rgba(0, 0, 0, 0.1); /* Add hover effect highlight */
 }
 
 #search {
@@ -133,6 +128,14 @@ span.icon:hover {
 
 #filter {
     margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent circle */
+    border-radius: 50%; /* Circular background */
+    padding: 10px;
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+}
+
+#filter:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Highlight effect on hover */
 }
 
 #unitPageHeader {

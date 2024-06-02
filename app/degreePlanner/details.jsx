@@ -42,33 +42,35 @@ export default function Details({degrees}) {
                 <h2 className="pageHeader">Let&apos;s Get Started!</h2>
                 <div className="detailsForm">
                     <div className="formElement">
-                        <label className="degreeLabel" for="degree">Degree</label>
+                        <label className="degreeLabel" htmlFor="degree">Degree</label>
                         <select id="degree" className="degreeSelect" required value={degreeIDSelected} onChange={(e) => setDegreeID(e.target.value)}>
-                            <option value="-1" disabled selected>Select degree</option>
+                            <option value="-1" disabled>Select degree</option>
                             {degrees.map((item, i) => <option key={item.degreeid} value={item.degreeid}> {item.degreename} </option>)}
                         </select>
                     </div>
                     <div className="formElement">
-                        <label className="degreeLabel" for="firstMajor">Major</label>
-                        <select id="firstMajor" className="degreeSelect" required>
-                            <option value="" disabled selected>Select major</option>
-                            {(degreeIDSelected === "-1") && <option disabled>Select Degree...</option>}
+                        <label className="degreeLabel" htmlFor="firstMajor">Major</label>
+                        <select id="firstMajor" className="degreeSelect" defaultValue="-1" required>
+                            <option value="-1" disabled>Select major</option>
+                            {(degreeIDSelected === "-1") && <option value="-2" disabled>Please Select Degree first!</option>}
                             {(degreeIDSelected !== "-1") && majors && majors.map((item) => <option key={item.majorid} value={item.majorid}> {item.majorname} </option>)}
                         </select>
                     </div>
                     <div className="formElement">
-                        <label className="degreeLabel" for="secondMajor">Second major (if applicable)</label>
-                        <select id="secondMajor" className="degreeSelect" required>
-                            <option value="" disabled selected>Select major</option>
-                            {(degreeIDSelected === "-1") && <option disabled>Select Degree...</option>}
+                        <label className="degreeLabel" htmlFor="secondMajor">Second major (if applicable)</label>
+                        <select id="secondMajor" className="degreeSelect" defaultValue="0" required>
+                            {(degreeIDSelected !== "-1") && <option value="-1" disabled>Select Major</option>}
+                            {(degreeIDSelected === "-1") && <option value="-1" disabled>Please Select Degree first!</option>}
+                            <option value="0">NA</option>
                             {(degreeIDSelected !== "-1") && majors && majors.map((item) => <option key={item.majorid} value={item.majorid}> {item.majorname} </option>)}
                         </select>
                     </div>
                     <div className="formElement">
-                        <label className="degreeLabel" for="minor">Minor (if applicable)</label>
-                        <select id="minor" className="degreeSelect" required>
-                            <option value="" disabled selected>Select minor</option>
-                            {(degreeIDSelected === "-1") && <option disabled>Select Degree...</option>}
+                        <label className="degreeLabel" htmlFor="minor">Minor (if applicable)</label>
+                        <select id="minor" className="degreeSelect" defaultValue="0" required>
+                            {(degreeIDSelected !== "-1") && <option value="-1" disabled>Select Major</option>}
+                            {(degreeIDSelected === "-1") && <option value="-1" disabled>Please Select Degree first!</option>}
+                            <option value="0">NA</option>
                             {(degreeIDSelected !== "-1") && majors && majors.map((item) => <option key={item.majorid} value={item.majorid}> {item.majorname} </option>)}
                         </select>
                     </div>

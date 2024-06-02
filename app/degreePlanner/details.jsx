@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { Planner } from "./panner";
-import { getMajors } from "../api/utils/degrees";
+
+const env = process.env.NODE_ENV;
+const baseURL = env === "development" ? "http://localhost:3000" : "http://www.unitrack.au";
 
 export default function Details({degrees}) {
     const [shouldShowNextPage, setShouldShowNextPage] = useState(false);
@@ -11,13 +13,12 @@ export default function Details({degrees}) {
 
     useEffect(() => {
         const getMajors = async () => {
-            const resp = await fetch(`http://localhost:3000/api/getMajors?degreeID=${degreeIDSelected}`);
+            const resp = await fetch(`${baseURL}/api/getMajors?degreeID=${degreeIDSelected}`);
 
             if (resp.ok) {
                 const majors = await resp.json();
                 setMajorsForDegree(majors.data);
             }
-
         };
 
         getMajors();

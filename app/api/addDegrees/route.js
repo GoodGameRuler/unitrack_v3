@@ -2,16 +2,12 @@ import { sql } from '@vercel/postgres';
 import { NextResponse } from 'next/server';
 
 export async function GET(request) {
-  const { searchParams } = new URL(request.url);
-  const degreeName = searchParams.get('degreeName');
+    // Prevents Caching
+    noStore();
 
-  // try {
-  //   if (!degreeName) throw new Error('Degree name required');
-  //   await sql`INSERT INTO Degrees (Name) VALUES (${degreeName});`;
-  // } catch (error) {
-  //   return NextResponse.json({ error }, { status: 500 });
-  // }
+    const { searchParams } = new URL(request.url);
+    const degreeName = searchParams.get('degreeName');
 
-  const pets = await sql`SELECT * FROM Degrees;`;
-  return NextResponse.json({ pets }, { status: 200 });
+    const degrees = await sql`SELECT * FROM Degrees;`;
+    return NextResponse.json({ degrees, message: "Not allowing API Access" }, { status: 200 });
 }

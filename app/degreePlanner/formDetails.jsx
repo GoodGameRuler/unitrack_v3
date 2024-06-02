@@ -16,7 +16,7 @@ if (env === "production") {
     var baseURL = "https://localhost:3000";
 }
 
-export default function Details({degrees}) {
+export default function FormDetails({degrees}) {
     const [shouldShowNextPage, setShouldShowNextPage] = useState(false);
     const [degreeIDSelected, setDegreeID] = useState("-1");
     const [majors, setMajorsForDegree] = useState([]);

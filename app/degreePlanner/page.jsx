@@ -1,8 +1,8 @@
 import { getDegrees, getMajors } from "../api/utils/degrees";
 import "./degreePlanner.css";
-import Details from "./details";
+import FormDetails from "./formDetails";
 
 export default async function DegreePlanner() {
     const degrees = await getDegrees();
-    return <Details degrees={degrees} />;
+    return <FormDetails degrees={degrees} />;
 }

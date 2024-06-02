@@ -1,7 +1,7 @@
 .navBarContainer {
     grid-column: 1;
-    background-color: red;
-    padding: 25px;
+    background-color: rgba(221, 67, 43, 0.9);
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -11,42 +11,46 @@
 
 .navBarTitle {
     font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none;
+    line-height: 1;
 }
 
 .navBarItemsContainer {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .navBarButton {
     width: 100%;
-    font-size: 17px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     padding: 10px;
     background-color: inherit;
     color: white;
     font-weight: 600;
-
     border: none;
     box-sizing: border-box;
 }
 
 .navBarButton:hover {
-    background-color: rgba(222, 76, 53, 0.97);
-
+    background-color: #DD432B;
 }
 
 .navBarItem {
-    border-radius: 5px;
-
+    border-radius: 10px;
 }
 
-.userLoginDetails {
+.navBarItem i {
+    font-size: 25px;
+}
+
+/* .userLoginDetails {
     width: 100%;
 }
 
@@ -66,4 +70,4 @@
 .loginInfoContainer:hover {
     max-height: 100vh;
     height: auto;
-}
+} */

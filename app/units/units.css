@@ -2,20 +2,24 @@
     min-width: 70%;
     max-width: 80%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
 }
 
 .unitSearch {
     height: 60px;
     margin: 10px 0;
     position: relative;
-
+    display: flex;
+    align-items: center;
 }
 
 .unitSearch .unitSearchInput {
-    padding: 5px;
     padding-left: 50px;
     border-radius: 15px;
-    border: 2px solid red;
+    border: 2px solid #DD432B;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -25,10 +29,13 @@
     z-index: 1;
     background-color: transparent;
     font-size: 20px;
+    caret-color: rgb(54, 54, 54);
 }
 
-input:focus, input:first-line {
-    background-color: white;
+.inputLabel {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .inputLabel p {
@@ -45,14 +52,33 @@ input:focus, input:first-line {
 .unitSearchInput:invalid{ background-color:transparent; }
 
 .unitSearch .unitSearchInput:focus {
-    border: 2px solid red;
+    outline: none;
+    background-color: #ffe9e5;
+    border: none;
 }
 
 .filterAccordian {
-    margin: 10px 0;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.filtersContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.clearFilter {
+    background-color: transparent;
+    border: none;
+    color: #DD432B;
+    font-size: 15px;
+    text-align: right;
 }
 
 .check {
@@ -82,10 +108,19 @@ fieldset.row {
 }
 
 span.icon {
-    position: absolute;
-    color: red;
-    font-size: 40px;
-    top: 50%;
-    transform: translate(20%, -50%);
+    color: #DD432B;
+    font-size: 35px;
     z-index: 2;
+}
+
+#search {
+    margin-left: 10px;
+}
+
+#filter {
+    margin-right: 10px;
+}
+
+#unitPageHeader {
+    text-align: left;
 }

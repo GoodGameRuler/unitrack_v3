@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import { Planner } from "./panner";
+import { Planner } from "./planner";
 
 const env = process.env.NEXT_PUBLIC_VERCEL_ENV;
 var baseURL = "";
@@ -15,9 +15,6 @@ if (env === "production") {
 } else if (env === "development") {
     var baseURL = "https://localhost:3000";
 }
-
-
-console.log(process.env.BASEURL);
 
 export default function Details({degrees}) {
     const [shouldShowNextPage, setShouldShowNextPage] = useState(false);

@@ -1,22 +1,57 @@
-.circlesContainer {
+.profileContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
 
 .profilePhoto {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 5px 5px gray;
-    margin: 0 5px;
-}
-
-.githubSVG {
-    background-image: url("/static/github_icon.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.heading {
+	font-size: 35px;
+}
+
+.subheading {
+	font-size: 25px;
+}
+
+.aboutUsTagline {
+    font-size: 18px;
+    text-align: center;
+}
+
+.aboutUsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+}
+
+.aboutUsContainer > .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.aboutUs {
+    text-align: justify;
+}
+
+.divider hr {
+    border-color: black;
+    opacity: 0.2;
+    border-width: 1px;
 }

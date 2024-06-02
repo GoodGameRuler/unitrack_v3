@@ -44,7 +44,3 @@
     background-position: right 0.8rem center;
     background-size: 1em;
 }
-
-.formElement .degreeSelect:invalid {
-    color: #999;
-}

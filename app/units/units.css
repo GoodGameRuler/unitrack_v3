@@ -123,16 +123,18 @@ span.icon {
 
 #filter {
     margin-right: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
     border-radius: 50%; 
     padding: 10px;
     cursor: pointer; 
     user-select: none;
+    transition: background-color 0.3s ease; 
 }
 
 #filter:hover {
     background-color: rgba(0, 0, 0, 0.2); 
 }
+
 #unitPageHeader {
     text-align: left;
 }

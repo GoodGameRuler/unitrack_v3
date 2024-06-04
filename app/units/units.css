@@ -14,6 +14,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 .unitSearch .unitSearchInput {
@@ -30,6 +31,7 @@
     background-color: transparent;
     font-size: 20px;
     caret-color: rgb(54, 54, 54);
+    user-select: none;
 }
 
 .inputLabel {
@@ -48,8 +50,8 @@
     z-index: 0;
 }
 
-.unitSearchInput:valid { background-color:white; }
-.unitSearchInput:invalid{ background-color:transparent; }
+.unitSearchInput:valid { background-color: transparent; }
+.unitSearchInput:invalid{ background-color: transparent; }
 
 .unitSearch .unitSearchInput:focus {
     outline: none;
@@ -64,6 +66,7 @@
     padding: 15px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    user-select: none;
 }
 
 .filtersContainer {
@@ -79,6 +82,7 @@
     color: #DD432B;
     font-size: 15px;
     text-align: right;
+    user-select: none; 
 }
 
 .check {
@@ -119,6 +123,16 @@ span.icon {
 
 #filter {
     margin-right: 10px;
+    background-color: transparent;
+    border-radius: 50%; 
+    padding: 10px;
+    cursor: pointer; 
+    user-select: none;
+    transition: background-color 0.3s ease; 
+}
+
+#filter:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
 }
 
 #unitPageHeader {

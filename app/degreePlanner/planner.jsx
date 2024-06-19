@@ -32,7 +32,7 @@ function DegreeRequirements() {
     return (
         <div className="degreeRequirements">
             <div className="degreeProgress">
-                <p id="degreePercentage" onclick="updateProgressBar(12, 100)">0% planned</p>
+                <p id="degreePercentage" onClick="updateProgressBar(12, 100)">0% planned</p>
                 <p id="completedCredits">0/0cp</p>
                 <br/>
             </div>

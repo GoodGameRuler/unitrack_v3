@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from 'react';
+
 import "./units.css";
+import UnitSelect from './select';
 
 function Units() {
     const [isFilterVisible, setIsFilterVisible] = useState(false);
@@ -125,6 +127,9 @@ function Units() {
                 </div>
             )}
             </form>
+
+            <UnitSelect />
+
         </div>
     )
 }

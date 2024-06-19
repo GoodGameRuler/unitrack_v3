@@ -7,13 +7,13 @@ const env = process.env.NEXT_PUBLIC_VERCEL_ENV;
 var baseURL = "";
 
 if (env === "production") {
-    var baseURL = "https://www.unitrack.au";
+    baseURL = "https://www.unitrack.au";
 
 } else if (env === "preview") {
-    var baseURL = `https://${process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL}`;
+    baseURL = `https://${process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL}`;
 
 } else if (env === "development") {
-    var baseURL = "https://localhost:3000";
+    baseURL = "https://localhost:3000";
 }
 
 export default function FormDetails({degrees}) {

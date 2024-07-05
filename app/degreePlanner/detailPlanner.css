@@ -122,13 +122,14 @@ background: var(--color);
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .degreeUnit > .unitDetails {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.2em;
     padding: 0.2em;
 }
 

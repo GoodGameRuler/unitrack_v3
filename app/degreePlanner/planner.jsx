@@ -122,16 +122,5 @@ export function Unit({ unit }) {
     )
 }
 
-export function DeleteConfimation() {
-    return (
-        <div className="deleteConfirmation">
-            <p>Are you sure you want to remove <span>UNIT CODE</span>?</p>
-            <div className="buttonContainer">
-                <button id="cancel">CANCEL</button>
-                <button id="delete">DELETE</button>
-            </div>
-        </div>
-    )
-}
 
-
+g

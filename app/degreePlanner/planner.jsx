@@ -77,6 +77,10 @@ export function SemesterPlan() {
         });
     };
 
+    const removeSelectedUnit = () => {
+        setUnit(null);
+    };
+
     return (
         <div className="semesterPlan">
             <p id="year">2021</p>
@@ -88,24 +92,28 @@ export function SemesterPlan() {
                 </Link>
             </div>
 
-            {unit ? <Unit unit={unit} /> : <EmptyUnit onClick={() => addSelectedUnit('INFO1110')} />}
+            {unit ?
+                <Unit unit={unit} onRemove={removeSelectedUnit}/> :
+                <EmptyUnit onAdd={() => addSelectedUnit('INFO1110')} />
+            }
         </div>
     )
 }
 
-export function EmptyUnit({ onClick }) {
+export function EmptyUnit({ onAdd }) {
     return (
         <div className="degreeUnit">
-            <Link href="#" onClick={onClick}>
-                <i className="material-icons">search</i>
+            <Link href="#" onClick={onAdd}>
+                <i className="material-icons searchIcon">search</i>
             </Link>
         </div>
     )
 }
 
-export function Unit({ unit }) {
+export function Unit({ unit, onRemove }) {
     return (
         <a href="#" className="degreeUnit">
+            <i className="material-icons removeIcon" onClick={onRemove}>remove</i>
             <div className="unitDetails">
                 <div className="unitCode">
                     <p>{unit?.code}</p>

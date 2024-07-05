@@ -124,10 +124,17 @@ background: var(--color);
     justify-content: center;
 }
 
+.degreeUnit > .unitDetails {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.2em;
+}
+
 .degreeUnit i {
     color: black;
     opacity: 50%;
-
 }
 
 i:hover {
@@ -145,7 +152,10 @@ i:hover {
     color: black;
     font-size: 30px;
     margin-left: 10px;
+}
 
+.semesterRow:hover {
+    color: #DD432B;
 }
 
 .semesterPlan p {
@@ -160,4 +170,68 @@ i:hover {
 .semesterPlan #semester {
     font-size: 20px;
     font-weight: 600;
+}
+
+.unitCode {
+    font-size: 15px;
+    font-weight: 600; 
+}
+
+.unitName {
+    font-size: 15px;
+}
+
+.creditPoints {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.deleteConfirmation {
+    height: 263px;
+    width: 556px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteConfirmation > .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.buttonContainer > button {
+    width: 180px;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 15px;
+} 
+
+.buttonContainer #cancel {
+    background-color: white;
+    color: #DD432B;
+    border: 1px solid #DD432B;
+}
+
+.buttonContainer #delete {
+    background-color: #DD432B;
+    color: white;
+    border: none;
+}
+
+.deleteConfirmation p {
+    font-size: 25px;
+    font-weight: 700;
+    width: 392px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.deleteConfirmation span {
+    color: #DD432B;
+    font-style: normal;
 }

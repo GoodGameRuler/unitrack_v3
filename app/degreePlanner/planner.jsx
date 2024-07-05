@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./detailPlanner.css"
 
+
 export function Planner() {
 
     return (
@@ -76,13 +77,12 @@ export function SemesterPlan() {
                 </Link>
             </div>
 
-            <Unit />
+            <EmptyUnit />
         </div>
     )
 }
 
-export function Unit() {
-
+export function EmptyUnit() {
     return (
         <div className="degreeUnit">
             <Link href="#">
@@ -90,5 +90,38 @@ export function Unit() {
             </Link>
         </div>
     )
-
 }
+
+export function Unit() {
+    return (
+        <a href="#">
+            <div className="degreeUnit">
+                <div className="unitDetails">
+                    <div className="unitCode">
+                        <p>Unit code</p>
+                    </div>
+                    <div className="unitName">
+                        <p>Unit name</p>
+                    </div>
+                    <div className="creditPoints">
+                        <p>Credit points</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    )
+}
+
+export function DeleteConfimation() {
+    return (
+        <div className="deleteConfirmation">
+            <p>Are you sure you want to remove <span>UNIT CODE</span>?</p>
+            <div className="buttonContainer">
+                <button id="cancel">CANCEL</button>
+                <button id="delete">DELETE</button>
+            </div>
+        </div>
+    )
+}
+
+

@@ -121,6 +121,3 @@ export function Unit({ unit }) {
         </a>
     )
 }
-
-
-g

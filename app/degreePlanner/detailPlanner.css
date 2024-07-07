@@ -122,15 +122,24 @@ background: var(--color);
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    position: relative;
 }
 
-.degreeUnit i {
+.degreeUnit > .unitDetails {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    padding: 0.2em;
+}
+
+.searchIcon {
     color: black;
     opacity: 50%;
-
 }
 
-i:hover {
+.searchIcon:hover {
     color: #DD432B;
     opacity: 100%;
 }
@@ -145,7 +154,10 @@ i:hover {
     color: black;
     font-size: 30px;
     margin-left: 10px;
+}
 
+.semesterRow:hover {
+    color: #DD432B;
 }
 
 .semesterPlan p {
@@ -160,4 +172,31 @@ i:hover {
 .semesterPlan #semester {
     font-size: 20px;
     font-weight: 600;
+}
+
+.unitCode {
+    font-size: 15px;
+    font-weight: 600; 
+}
+
+.unitName {
+    font-size: 15px;
+}
+
+.creditPoints {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.removeIcon {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 18px !important;
+    border-radius: 50%;
 }

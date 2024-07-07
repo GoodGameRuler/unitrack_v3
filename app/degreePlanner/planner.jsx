@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Link from "next/link";
 import "./detailPlanner.css"
 
@@ -65,6 +66,21 @@ function updateProgressBar(credits, totalCredits) {
 }
 
 export function SemesterPlan() {
+    const [unit, setUnit] = useState(null);
+
+    const addSelectedUnit = (unitCode) => {
+        // TODO: Change to add actual unit name and credit points
+        setUnit({
+            code: unitCode,
+            name: "Introduction to Programming",
+            creditPoints: "6 credit points"
+        });
+    };
+
+    const removeSelectedUnit = () => {
+        setUnit(null);
+    };
+
     return (
         <div className="semesterPlan">
             <p id="year">2021</p>
@@ -76,19 +92,39 @@ export function SemesterPlan() {
                 </Link>
             </div>
 
-            <Unit />
+            {unit ?
+                <Unit unit={unit} onRemove={removeSelectedUnit}/> :
+                <EmptyUnit onAdd={() => addSelectedUnit('INFO1110')} />
+            }
         </div>
     )
 }
 
-export function Unit() {
-
+export function EmptyUnit({ onAdd }) {
     return (
         <div className="degreeUnit">
-            <Link href="#">
-                <i className="material-icons">search</i>
+            <Link href="#" onClick={onAdd}>
+                <i className="material-icons searchIcon">search</i>
             </Link>
         </div>
     )
+}
 
+export function Unit({ unit, onRemove }) {
+    return (
+        <a href="#" className="degreeUnit">
+            <i className="material-icons removeIcon" onClick={onRemove}>remove</i>
+            <div className="unitDetails">
+                <div className="unitCode">
+                    <p>{unit?.code}</p>
+                </div>
+                <div className="unitName">
+                    <p>{unit?.name}</p>
+                </div>
+                <div className="creditPoints">
+                    <p>{unit?.creditPoints}</p>
+                </div>
+            </div>
+        </a>
+    )
 }
